@@ -1,0 +1,78 @@
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto; /* Adjusted to fit content */
+    margin: 20px; /* Add margin around the form */
+    height: 100vh; /* Full viewport height */
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Wider to accommodate the blog post form */
+    text-align: left; /* Align text to the left */
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold; /* Make label bold for better visibility */
+    text-align: center;
+}
+
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: none; /* Prevent resizing the textarea */
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px; /* Adjust top margin */
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.button-group button {
+    background-color: #f44336; /* Red for the Clear button */
+    color: white;
+}
+
+.button-group button:hover {
+    background-color: #e53935;
+}

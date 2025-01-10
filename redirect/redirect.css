@@ -1,0 +1,33 @@
+.message-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f4f8; /* Light background color */
+}
+
+.message {
+    padding: 20px;
+    background-color: #fff; /* White background for the message */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    text-align: center;
+    color: #333;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.message-container {
+    animation: fadeIn 1s; /* Fade-in animation for the container */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

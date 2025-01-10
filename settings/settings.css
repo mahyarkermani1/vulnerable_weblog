@@ -1,0 +1,121 @@
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150vh; /* Full viewport height */
+}
+
+.container {
+    /* Keep your existing styles here */
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 20px;
+    text-align: center;
+}
+
+textarea {
+    resize: none; /* Prevent resizing */
+    border-radius: 20px;
+    text-align: left;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.button-group button {
+    background-color: #f44336;
+    color: white;
+}
+
+.button-group button:hover {
+    background-color: #e53935;
+}
+
+.additional-button {
+    background-color: #2196F3;
+    width: 100%;
+    font-weight: bold;
+}
+
+.additional-button:hover {
+    background-color: #1976D2;
+}
+
+.additional-button:first-of-type {
+    margin-bottom: 10px; /* Adjust the value for your desired spacing */
+}
+
+
+
+
+input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 100%;
+
+    text-align: center;
+}
+
+progress {
+    width: 100%;
+    height: 20px;
+    margin-bottom: 30px;
+}
+
+#uploadStatus {
+    font-weight: bold;
+}
+
+
+.circle-image {
+    border-radius: 50%; /* This will make the image circular */
+    object-fit: cover; /* Ensures the image covers the entire area */
+}

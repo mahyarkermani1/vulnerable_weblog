@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Page</title>
+        <link rel="stylesheet" href="forget_password.css">
+        <link rel="stylesheet" href="/statics/index.css">
+        <script src="/statics/functions.js"></script>
+    </head>
+    <body>
+    <!--#include virtual="/statics/header.php" -->
+
+    <!--#include virtual="forget_password.php" -->
+    
+    <!--#include virtual="/statics/footer.html" -->
+
+    <script>
+        // Function to update the Forget Password button onclick based on username input
+        function updateForgetPasswordLink() {
+            const identifier = document.getElementById('identifier');
+
+            // Get the current URL
+            const currentUrl = window.location.href;
+
+            // Create a URL object
+            const url = new URL(currentUrl);
+
+            // Use URLSearchParams to access the query parameters
+            const params = new URLSearchParams(url.search);
+
+            // Check if 'username' exists and log its value
+            if (params.has('username')) {
+                identifier.value = params.get('username')
+            }
+        }
+    
+        // Add event listener to input field to update the button onclick dynamically
+        // document.getElementById('identifier').addEventListener('input', updateForgetPasswordLink);
+    
+        // Also call the function on page load to set the initial state
+        window.onload = updateForgetPasswordLink;
+    </script>
+    
+    </body>
+</html>
+    
